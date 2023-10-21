@@ -1,38 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Playpen+Sans:wght@100;300&display=swap');
+
+body {
+  background-color: #272b33;
+  padding: 2rem;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Cutive Mono', monospace;
+  font-family: 'Playpen Sans', cursive;
+}
+
 .App {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 3rem;
+}
+
+.myCard {
+  background-color: #3b3e43;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  height: 260px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: transform 1s;
+}
+
+.myCard:hover {
+  transform: scale(1);
+  box-shadow: 1px 4px 30px 4px #efecec inset;
+}
+.img {
+  width: 260px;
+  display: flex;
+  border-radius: 1.1rem 0rem 0rem 1.1rem;
+  aspect-ratio: 4/2;
+}
+
+.allText {
+  text-align: start;
   color: white;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  color: #9d9085;
+  font-size: 0.8rem;
+}
+#h4 {
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*  */
+#next {
+  font-size: 24px;
+  text-align: center;
+  color: wheat;
+  font-family: monospace;
+}
+
+#prevText {
+  color: wheat;
+  text-align: center;
+  font-family: monospace;
+}
+
+#wrapper {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+#wrapper:hover {
+  background-color: #0056b3;
 }
